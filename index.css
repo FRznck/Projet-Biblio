@@ -1,0 +1,113 @@
+/* Corps de la page */
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #2e2b2b;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+  }
+  
+  /* Grille de fond */
+  .grid {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, rgba(105, 73, 50, 0.2) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(105, 73, 50, 0.2) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+  p{
+    text-align: center;
+    font-size: larger;
+  }
+  /* Boîte du formulaire */
+  .container,p {
+    position: relative;
+    background-color: #1f1a17;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    max-width: 350px;
+    width: 90%;
+    z-index: 1;
+  }
+  
+  /* Titre */
+  .container h1 {
+    color: #d4a373;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  /* Champs de saisie */
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3a342f;
+    color: #fff;
+    font-size: 14px;
+    transition: width 0.4s ease-in-out;
+  }
+  input[type="email"]::placeholder,
+  input[type="text"]::placeholder,
+  input[type="password"]::placeholder {
+    color: #7d756e;
+  }
+
+  input[type=text]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus
+  {
+    background-color: rgba(254, 254, 254, 0.663);
+    width:50%;
+}
+  
+  /* Boutons */
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d4a373;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #b37d4b;
+  }
+  
+  /* Liens */
+  .container a {
+    text-decoration: none;
+    color: #d4a373;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .container a:hover {
+    color: #b37d4b;
+  }
+  
+  /* Positionnement des liens */
+  .links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
